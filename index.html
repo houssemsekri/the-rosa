@@ -1,452 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- font awesome -->
-  <link rel="stylesheet" href="css/all.css">
-  <title>Cart Project</title>
-  <style>
-    html{
-      scroll-behavior: smooth;
-    }
-     @media only screen and (max-width: 992px){
- #cart-info1{
-      display: flex !important;
-      
-    }
-    }
-    @media only screen and (min-width: 992px){
- #cart-info1{
-      display: none !important;
-    }
-    }
-   
-   .store-item-icon{
-     position: initial !important;
-     display: block;
-     transform: initial !important;
-     z-index: 500000000 !important;
-     position: relative;
-   }
-   .store-img{
-     z-index: 500 !important;
-     position: relative;
-     transform: initial !important;
-   }
-  </style>
-</head>
-
-<body>
-  <div class="alert-houssem">
-    <h4 class="alert-message"></h4>
-  </div>
-  <!-- header -->
-  <header id="header" >
-    <!-- navbar  -->
-    <!-- 
-https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
-Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/korawan_m
-     -->
-     <div style="position: fixed; top: 0 ; z-index: 5000000000; background-color: white; display: flex; justify-content:space-around; width: 100%;">
-      <nav class="navbar navbar-expand-lg px-4" style="width: 100%;">
-        <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" ></a>
-   
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"  style="margin-left: auto;" >
-          
-          <span class="toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-            <div id="cart-info1" class=" nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5 "
-             >
-              <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart  ">  </i></span>
-              <p class="mb-0 text-capitalize"><span id="item-count1"> </span>  - $<span class="item-total1"> </span></p>
-            </div>
-        <div class="collapse navbar-collapse" id="myNav">
-          <ul class="navbar-nav mx-auto text-capitalize">
-            <li class="nav-item active">
-              <a class="nav-link" href="#header">home</a>
-            </li>
-           
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Rosa</title>
+    <!--Font awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="open">
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <a href="index.html" class="logo">
+            <img src="./images/logo-rosa.png" alt=""
+          /></a>
+          <ul class="nav-list">
             <li class="nav-item">
-              <a href="#store" class="nav-link" >store</a>
+              <a href="#" class="navlink">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="navlink">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="navlink">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="navlink">Shop</a>
             </li>
           </ul>
-          
-          <div class="nav-info-items d-none d-lg-flex ">
-            <!-- single info -->
-            <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
-              <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
-              <p class="mb-0">+ 123 456 789</p>
-            </div>
-            <!-- end of single info -->
-            <!-- single info -->
-            <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
-              <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart  "> add to cart </i></span>
-              <p class="mb-0 text-capitalize"><span id="item-count"> </span> items - $<span class="item-total"> </span></p>
-            </div>
-            <!-- end of single info -->
+        </nav>
+      </div>
+    </header>
+    <!--header end-->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h2 class="sub-headline"><span class="first-letter">w</span>elcome</h2>
+        <h1 class="headline">The Rosa</h1>
+        <div class="headline-description">
+          <div class="separator">
+            <div class="line line-left"></div>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            <div class="line line-right"></div>
           </div>
-        </div>
-      </nav>
-    </div>
-    
-    <!-- end of nav -->
-    <!-- banner  -->
-    <div class="container-fluid" style="margin-top: 75px;">
-      <div class="row max-height justify-content-center align-items-center min-height">
-        <div class="col-10 mx-auto banner text-center">
-          <h1 class="text-capitalize">welcome to <strong class="banner-title ">grandma's</strong></h1>
-          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
-
-        </div>
-        <div id="cart" class="cart" style="position: fixed; right: 0; top: 75px; z-index: 60000000; background-color: white;">
-          <!-- cart item -->
-          
-
-          
-          <!--end of  cart item -->
-          <!-- cart total -->
-          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
-            <h5>total</h5>
-            <h5> $ <strong id="cart-total" class="font-weight-bold"> </strong> </h5>
+          <div class="single-animation">
+            <h5>Ready to be opened</h5>
+            <a href="#" class="btn cta-btn"></a>
           </div>
-          <!--end cart total -->
-          <!-- cart buttons -->
-          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
-            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
-            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
-          </div>
-          <!--end of  cart buttons -->
-          <!--  -->
         </div>
       </div>
-    </div>
-
-
-
-
-    <!--end of  banner  -->
-  </header>
-  <!-- header -->
-  <!-- about us -->
-  
-
-  <!-- end of about us -->
-
-
-  <!-- store -->
-  <section id="store" class="store py-5">
-    <div class="container" id="s">
-      <!-- section title -->
-      <div class="row">
-        <div class="col-10 mx-auto col-sm-6 text-center">
-          <h1 class="text-capitalize">our <strong class="banner-title ">store</strong></h1>
-        </div>
-      </div>
-      <!-- end of section title -->
-      <!--filter buttons -->
-     
-      <!--end of filter buttons -->
-      <!-- store  items-->
-      <div class="row" class="store-items" id="store-items">
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/sweets-1.jpeg" class="card-img-top store-img" alt="" style="display: block; width: 100%; padding: 5px; ">
-              <span class="store-item-icon" style="z-index: 600; position: relative;">
-                <i class="fas fa-shopping-cart"   > add to cart  </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">sweet item </h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-              
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/cupcake-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cupcake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/doughnut-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">dougnut item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/sweets-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">sweet item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cupcake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/doughnut-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">dougnut item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/sweets-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">sweet item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cupcake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  " style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
-          <div class="card ">
-            <div class="img-container">
-              <img src="img/doughnut-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart  "style=" display: block; width: 100%; padding:7px"> add to cart </i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">dougnut item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-
-      </div>
-  </section>
-  <!--end of store items -->
-
-
-  <!-- modal-container -->
-  <div class="container-fluid ">
-    <div class="row lightbox-container align-items-center">
-      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
-        <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
-        <div class="lightbox-item"></div>
-        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
-        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
-      </div>
-
-    </div>
-  </div>
-
-
-  <!-- jquery -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- script js -->
-  <script src="js/app1.js"></script>
-</body>
-
+    </section>
+    <!-- hero end-->
+    <script src="main.js"></script>
+  </body>
 </html>
